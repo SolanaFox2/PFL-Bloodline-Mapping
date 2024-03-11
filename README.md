@@ -92,12 +92,17 @@ List of python libraries and how to install them.
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Run the code below to clone the GitHub Repo OR download files by following the steps for "Manual Download"_
 
 1. Clone the repo
    ```sh
    git clone https://github.com/SolanaFox2/PFL-Bloodline-Mapping.git
    ```
+2. Manual Download
+   * Click the green "<> Code" button in the top right
+   * Click "Download Zip"
+   * Select where to save the zip
+   * Unzip the file
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
