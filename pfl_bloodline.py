@@ -1,16 +1,12 @@
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
-from datetime import datetime, timedelta
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from graphviz import Digraph
 from PIL import Image
-from tqdm import tqdm
 import urllib.request 
-import json
 import time
-import pandas as pd
 import re
 import os
 
