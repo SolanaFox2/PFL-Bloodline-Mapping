@@ -118,6 +118,7 @@ To run the code:
 
 - [ ] Add Changelog
 - [ ] Add Node colors to identify female and male horses
+- [ ] GUI
 - [ ] Add filters for stables to get a subset of your stable
 - [ ] Add "components" document to easily copy & paste sections of the readme
 
