@@ -77,16 +77,12 @@ Please feel free to rach out to me on twitter with any comments or suggestions!
 
 List of python libraries and how to install them.
 * selenium - used for webscraping
-  ```sh
-  pip install selenium
-  ```
 * Pillow - used for image capture and saving
-  ```sh
-  pip install pillow
-  ```
 * Graphviz - used for creating and mapping the bloodline
+
+Please run the following command to install all dependencies:
   ```sh
-  pip install graphviz
+  pip install requirement.txt
   ```
 
 
