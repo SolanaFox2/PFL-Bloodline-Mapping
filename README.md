@@ -8,7 +8,9 @@
 <div align="center">
   
   <h3 align="center">PhotoFinish Bloodline Mapping</h3>
-
+   <a>
+    <img src="bloodline_example.png" width="300" height="360">
+  </a>
   <p align="center">
     An awesome way to map your Stable's Bloodline!
     <br />
