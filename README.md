@@ -65,6 +65,12 @@ Please feel free to rach out to me on twitter with any comments or suggestions!
 <!-- GETTING STARTED -->
 ## Getting Started
 
+### Prerequisites
+
+* Python
+* pip
+
+
 ### Dependencies
 
 List of python libraries and how to install them.
