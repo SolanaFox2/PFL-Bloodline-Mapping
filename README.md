@@ -58,7 +58,7 @@ At a high level, here's how the code works:
 * Goes horse by horse and documents their name, gender, and bloodline
 * Plots horses and bloodline
 
-Please feel free to rach out to me on twitter with any comments or suggestions!
+Please feel free to reach out to me on twitter with any comments or suggestions!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,7 +82,7 @@ List of python libraries and how to install them.
 
 Please run the following command to install all dependencies:
   ```sh
-  pip install requirement.txt
+  pip install -r requirements.txt
   ```
 
 
