@@ -17,7 +17,7 @@
     <br />
     <a>Enjoy the tool? Feel free to send a tip to CHDzDXTciRwApZm5g1R28QKoyuN6UHXWBrB57Lj1Sbbm</a>
     ·
-    <a href="https://github.com/SolanaFox2/PFL-Bloodline-Mapping.git/issues">Report Bug</a>
+    <a href="https://github.com/SolanaFox2/PFL-Bloodline-Mapping/issues">Report Bug</a>
   </p>
 </div>
 
