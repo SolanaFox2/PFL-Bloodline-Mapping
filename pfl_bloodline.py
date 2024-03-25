@@ -41,8 +41,9 @@ stable_ID = input()
 options = Options()
 options.add_argument('--headless=new')
 
-
 driver = webdriver.Chrome(options = options)
+
+driver = webdriver.Chrome()
 
 driver.get('https://photofinish.live/stable/' + stable_ID)
 
@@ -72,7 +73,40 @@ body.send_keys(Keys.PAGE_DOWN)
 time.sleep(1)
 body.send_keys(Keys.PAGE_DOWN)
 time.sleep(1)
-
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
+body.send_keys(Keys.PAGE_DOWN)
+time.sleep(1)
 
 
 horse_links = []
@@ -99,20 +133,23 @@ counter = 1
 for horse_link in horse_links:
 	driver.get(horse_link)
 
+	time.sleep(3)
 
 
-	time.sleep(1)
+
+	#body = driver.find_element(By.CSS_SELECTOR, 'body')
+	#body.click()
+	#body.send_keys(Keys.PAGE_DOWN)
 
 	bloodline = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[1]/ul/div[1]/div/li[4]')
 	bloodline.click()
 	time.sleep(1)
 
-	family = []
 	horse_rank = []
+	family = []
 
 	name = driver.find_element(By.XPATH, '//*[@id="__next"]/div[1]/div/div[2]/div[2]/main/div[3]/div[1]/div/div[2]/div/div/div[1]/div/div[1]/h3/div/div/div[1]/div[2]/span').text
 	family.append(name)
-	
 
 	img = driver.find_element(By.XPATH, '//*[@id="__next"]/div[1]/div/div[2]/div[2]/main/div[3]/div[1]/div/div[2]/div/div/div[1]/div/div[1]/h3/div/div/div[1]/div[1]/div/img').get_attribute('src')
 	urllib.request.urlretrieve(img, str(img[-19:-11]))
@@ -177,7 +214,7 @@ for horse_link in horse_links:
 		family.append(str(img[-9:]))
 		horse_rank.append('N/A')
 	else:
-		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/div/div[2]/div[1]/div/img')
+		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/div[1]/div/img')
 		horse_rank.append(img)
 		family.append(dads_grandma1)
 
@@ -189,7 +226,7 @@ for horse_link in horse_links:
 		family.append(str(img[-9:]))
 		horse_rank.append('N/A')
 	else:
-		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/div[1]/div/img')
+		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/div/div[2]/div[1]/div/img')
 		horse_rank.append(img)
 		family.append(dads_grandpa2)
 
@@ -258,7 +295,7 @@ for horse_link in horse_links:
 		family.append(str(img[-9:]))
 		horse_rank.append('N/A')
 	else:
-		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[1]/div[2]/div/div[1]/div[1]/div/img')
+		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[1]/div[2]/div/div[2]/div[1]/div/img')
 		horse_rank.append(img)
 		family.append(moms_grandma1)
 
