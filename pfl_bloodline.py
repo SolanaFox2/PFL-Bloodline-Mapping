@@ -163,8 +163,8 @@ for horse_link in horse_links:
 	dad = try_xpath('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[1]/div/div[1]/p')
 	if dad == 'View on Solscan':
 		img = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[1]/div/img').get_attribute('src')
-		urllib.request.urlretrieve(img, str(img[-9:]))
-		family.append(str(img[-9:]))
+		urllib.request.urlretrieve(img, str(img[-9:-4] + ".png"))
+		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
 		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[1]/div/div[1]/div/img')
@@ -176,8 +176,8 @@ for horse_link in horse_links:
 	dads_dad = try_xpath('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div[1]/div/div/div[1]/p')
 	if dads_dad == 'View on Solscan':
 		img = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div[1]/div/div/img').get_attribute('src')
-		urllib.request.urlretrieve(img, str(img[-9:]))
-		family.append(str(img[-9:]))
+		urllib.request.urlretrieve(img, str(img[-9:-4] + ".png"))
+		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
 		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div[1]/div/div/div[1]/div/img')
@@ -187,8 +187,8 @@ for horse_link in horse_links:
 	dads_mom = try_xpath('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[1]/div/div/div[1]/p')
 	if dads_mom == 'View on Solscan':
 		img = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[1]/div/div/img').get_attribute('src')
-		urllib.request.urlretrieve(img, str(img[-9:]))
-		family.append(str(img[-9:]))
+		urllib.request.urlretrieve(img, str(img[-9:-4] + ".png"))
+		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
 		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[1]/div/div/div[1]/div/img')
@@ -199,8 +199,8 @@ for horse_link in horse_links:
 	dads_grandpa1 = try_xpath('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/div/div[1]/div[1]/p')
 	if dads_grandpa1 == 'View on Solscan':
 		img = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/div/div[1]/img').get_attribute('src')
-		urllib.request.urlretrieve(img, str(img[-9:]))
-		family.append(str(img[-9:]))
+		urllib.request.urlretrieve(img, str(img[-9:-4] + ".png"))
+		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
 		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/div/div[1]/div[1]/div/img')
@@ -210,8 +210,8 @@ for horse_link in horse_links:
 	dads_grandma1 = try_xpath('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/div/div[2]/div[1]/p')
 	if dads_grandma1 == 'View on Solscan':
 		img = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/div/div[2]/img').get_attribute('src')
-		urllib.request.urlretrieve(img, str(img[-9:]))
-		family.append(str(img[-9:]))
+		urllib.request.urlretrieve(img, str(img[-9:-4] + ".png"))
+		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
 		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/div[1]/div/img')
@@ -222,8 +222,8 @@ for horse_link in horse_links:
 	dads_grandpa2 = try_xpath('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/div[1]/p')
 	if dads_grandpa2 == 'View on Solscan':
 		img = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/img').get_attribute('src')
-		urllib.request.urlretrieve(img, str(img[-9:]))
-		family.append(str(img[-9:]))
+		urllib.request.urlretrieve(img, str(img[-9:-4] + ".png"))
+		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
 		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/div[1]/div/img')
@@ -234,8 +234,8 @@ for horse_link in horse_links:
 	dads_grandma2 = try_xpath('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[2]/div[1]/p')
 	if dads_grandma2 == 'View on Solscan':
 		img = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[2]/img').get_attribute('src')
-		urllib.request.urlretrieve(img, str(img[-9:]))
-		family.append(str(img[-9:]))
+		urllib.request.urlretrieve(img, str(img[-9:-4] + ".png"))
+		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
 		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/img')
@@ -245,8 +245,8 @@ for horse_link in horse_links:
 	mom = try_xpath('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[1]/div/div[1]/p')
 	if mom == 'View on Solscan':
 		img = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[1]/div/img').get_attribute('src')
-		urllib.request.urlretrieve(img, str(img[-9:]))
-		family.append(str(img[-9:]))
+		urllib.request.urlretrieve(img, str(img[-9:-4] + ".png"))
+		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
 		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[1]/div/div[1]/div/img')
@@ -256,8 +256,8 @@ for horse_link in horse_links:
 	moms_dad = try_xpath('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[1]/div[1]/div/div/div[1]/p')
 	if moms_dad == 'View on Solscan':
 		img = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[1]/div[1]/div/div/img').get_attribute('src')
-		urllib.request.urlretrieve(img, str(img[-9:]))
-		family.append(str(img[-9:]))
+		urllib.request.urlretrieve(img, str(img[-9:-4] + ".png"))
+		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
 		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[1]/div[1]/div/div/div[1]/div/img')
@@ -267,8 +267,8 @@ for horse_link in horse_links:
 	moms_mom = try_xpath('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div[1]/div/div/div[1]/p')
 	if moms_mom == 'View on Solscan':
 		img = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div[1]/div/div/img').get_attribute('src')
-		urllib.request.urlretrieve(img, str(img[-9:]))
-		family.append(str(img[-9:]))
+		urllib.request.urlretrieve(img, str(img[-9:-4] + ".png"))
+		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
 		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div[1]/div/div/div[1]/div/img')
@@ -279,8 +279,8 @@ for horse_link in horse_links:
 	moms_grandpa1 = try_xpath('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[1]/div[2]/div/div[1]/div[1]/p')
 	if moms_grandpa1 == 'View on Solscan':
 		img = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[1]/div[2]/div/div[1]/img').get_attribute('src')
-		urllib.request.urlretrieve(img, str(img[-9:]))
-		family.append(str(img[-9:]))
+		urllib.request.urlretrieve(img, str(img[-9:-4] + ".png"))
+		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
 		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[1]/div[2]/div/div[1]/div[1]/div/img')
@@ -291,8 +291,8 @@ for horse_link in horse_links:
 	moms_grandma1 = try_xpath('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[1]/div[2]/div/div[2]/div[1]/p')
 	if moms_grandma1 == 'View on Solscan':
 		img = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[1]/div[2]/div/div[2]/img').get_attribute('src')
-		urllib.request.urlretrieve(img, str(img[-9:]))
-		family.append(str(img[-9:]))
+		urllib.request.urlretrieve(img, str(img[-9:-4] + ".png"))
+		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
 		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[1]/div[2]/div/div[2]/div[1]/div/img')
@@ -303,8 +303,8 @@ for horse_link in horse_links:
 	moms_grandpa2 = try_xpath('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div[2]/div/div[1]/div[1]/p')
 	if moms_grandpa2 == 'View on Solscan':
 		img = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div[2]/div/div[1]/img').get_attribute('src')
-		urllib.request.urlretrieve(img, str(img[-9:]))
-		family.append(str(img[-9:]))
+		urllib.request.urlretrieve(img, str(img[-9:-4] + ".png"))
+		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
 		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div[2]/div/div[1]/div[1]/div/img')
@@ -315,8 +315,8 @@ for horse_link in horse_links:
 	moms_grandma2 = try_xpath('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div[2]/div/div[2]/div[1]/p')
 	if moms_grandma2 == 'View on Solscan':
 		img = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div[2]/div/div[2]/img').get_attribute('src')
-		urllib.request.urlretrieve(img, str(img[-9:]))
-		family.append(str(img[-9:]))
+		urllib.request.urlretrieve(img, str(img[-9:-4] + ".png"))
+		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
 		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/img')
@@ -328,7 +328,7 @@ for horse_link in horse_links:
 	rank_count = 0
 
 	for member in family:
-		if 'jpg' in member:
+		if 'png' in member:
 			dot.node(name = member, label = '', shape = 'none', image=member)
 		elif "N/A" in member:
 			bool = False
