@@ -214,7 +214,7 @@ for horse_link in horse_links:
 		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
-		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/div[1]/div/img')
+		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/div/div[2]/div[1]/div/img')
 		horse_rank.append(img)
 		family.append(dads_grandma1)
 
@@ -295,7 +295,7 @@ for horse_link in horse_links:
 		family.append(str(img[-9:-4] + ".png"))
 		horse_rank.append('N/A')
 	else:
-		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[4]/div[2]/div[1]/div[2]/div/div[2]/div[1]/div/img')
+		img = try_rank('/html/body/div[1]/div[1]/div/div[2]/div[2]/main/div[3]/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/div/div[2]/div[1]/div/img')
 		horse_rank.append(img)
 		family.append(moms_grandma1)
 
